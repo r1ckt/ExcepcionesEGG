@@ -32,13 +32,13 @@ public class Main {
                     System.out.println("Correcto!!!");
                     break;
                 }
-                if (input != random) {
-                    if (random > input) {
-                        System.out.println("El numero es mayor que el ingresado!");
-                    } else {
-                        System.out.println("El numero es menor que el ingresado!");
-                    }
+
+                if (random > input) {
+                    System.out.println("El numero es mayor que el ingresado!");
+                } else {
+                    System.out.println("El numero es menor que el ingresado!");
                 }
+
                 cont++;
             } catch (InputMismatchException e) {
                 System.out.println("Error: debe ingresar un numero entero");
